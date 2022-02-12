@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Design_2.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="460" d:DesignWidth="800">
     <StackPanel>
         <TextBlock Text="Discover"
                    Foreground="White"
@@ -13,7 +13,8 @@
                    HorizontalAlignment="Left"
                    Margin="0,0,0,20"/>
 
-        <StackPanel Orientation="Horizontal">
+        <StackPanel Orientation="Horizontal"
+                    Margin="0,0,0,10">
             <Border Width="400"
                     Height="200">
                 <Border.Background>
@@ -38,7 +39,7 @@
                                    FontSize="18"
                                    Margin="20,10,10,0"/>
                     </StackPanel>
-                    <Image Source="/Images/toppng.com-docker-logo-584x512.png" Margin="266,78,13,13"/>
+                    <Image Source="/Images/toppng.com-docker-logo-584x512.png" Margin="358,8,10,159"/>
                 </Grid>
             </Border>
 
