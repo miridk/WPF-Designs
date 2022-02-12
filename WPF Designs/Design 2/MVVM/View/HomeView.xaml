@@ -70,7 +70,7 @@
                                    FontSize="18"
                                    Margin="20,10,10,0"/>
                     </StackPanel>
-                    <Image Source="/Images/toppng.com-docker-logo-584x512.png" Margin="135,129,13,13"/>
+                    <Image Source="/MVVM/View/toppng.com-docker-logo-584x512.png" Margin="135,129,13,13"/>
                 </Grid>
             </Border>
         </StackPanel>

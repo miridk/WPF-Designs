@@ -43,7 +43,6 @@ namespace Design_2.MVVM.ViewModel
             {
                 CurrentView = MicroserviceVM;
             });
-
         }
     }
 }

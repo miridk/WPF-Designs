@@ -3,22 +3,17 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <RootNamespace>Design_2</RootNamespace>
+    <RootNamespace>Design_3</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="MVVM\View\toppng.com-docker-logo-584x512.png" />
+    <None Remove="round_panorama_fish_eye_white_24dp.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Fonts\" />
-    <Folder Include="MVVM\Model\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="MVVM\View\toppng.com-docker-logo-584x512.png" />
+    <Resource Include="round_panorama_fish_eye_white_24dp.png" />
   </ItemGroup>
 
 </Project>
