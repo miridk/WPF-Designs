@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Design_4</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="round_panorama_fish_eye_white_24dp.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="round_panorama_fish_eye_white_24dp.png" />
+  </ItemGroup>
+
+</Project>
