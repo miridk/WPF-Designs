@@ -9,45 +9,34 @@
       Title="HomeView">
 
     <Grid>
-        <StackPanel Width="320"
+        <StackPanel Width="420"
                     HorizontalAlignment="Left">
-            <Border CornerRadius="10"
-                    Background="#FF104080" 
-                    Width="300"
-                    Height="150"
-                    VerticalAlignment="Top"
-                    HorizontalAlignment="Left"
-                    Margin="10,10,0,0">
-                <TextBlock HorizontalAlignment="Center"
-                           VerticalAlignment="Center"
-                           FontSize="18" 
-                           TextDecorations="{x:Null}"> 
-                    <Hyperlink NavigateUri="AddNewServiceView.xaml" 
-                               Foreground="White" 
-                               TextDecorations="{x:Null}" 
-                               BaselineAlignment="Center">
-                        Add New Template
-                    
-                    </Hyperlink>
-                </TextBlock>
-            </Border>
-            <Border CornerRadius="10"
-                    Background="#FF104080" 
-                    Width="300"
-                    Height="150"
-                    VerticalAlignment="Top"
-                    HorizontalAlignment="Left"
-                    Margin="10,10,0,0">
-                <TextBlock HorizontalAlignment="Center"
-                           VerticalAlignment="Center"
-                           FontSize="18" 
-                           TextDecorations="{x:Null}"> 
-                    <Hyperlink NavigateUri="AddNewServiceView.xaml" 
-                               Foreground="White" 
-                               TextDecorations="{x:Null}" 
-                               BaselineAlignment="Center">
-                        Add New Template
-                    
+            <Border>
+                <TextBlock>
+                    <Hyperlink NavigateUri="AddNewServiceView.xaml"
+                               TextDecorations="{x:Null}">
+                        <Border Width="400"
+                                Height="200">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                    <GradientStop Color="#5bc3ff" Offset="0.0"/>
+                                    <GradientStop Color="Black" Offset="1.2"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                            <Border.Clip>
+                                <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,400,200"/>
+                            </Border.Clip>
+                            <Grid>
+                                <StackPanel>
+                                    <TextBlock Text="Start Adding A New Service"
+                                               Foreground="White"
+                                               FontSize="24"
+                                               Margin="20,10,10,0"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
                     </Hyperlink>
                 </TextBlock>
             </Border>

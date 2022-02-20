@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
+﻿using System.Windows.Controls;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Design_4
 {
@@ -23,6 +11,36 @@ namespace Design_4
         public AddPropertiesView()
         {
             InitializeComponent();
+        }
+
+        private void nextBtnAddProperties(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void addPropertyButton_Clicked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            if (propertyNameTextBox.Text != "")
+            {
+                Functionality.props.Add(propertyNameTextBox.Text);
+                propertyNameTextBox.Clear();
+            }
+            Functionality.types.Add(propertyTypeComboBox.Text.ToLower());
+            if (propertyRequiredCheckBox.IsChecked ?? false)
+            {
+                Functionality.required.Add("[Required]");
+            }
+            else
+            {
+                Functionality.required.Add("");
+            }
+            propertiesAddedCheckBox.Items.Clear();
+            int counterOfArraylist = Functionality.props.Count;
+            string[] str = new string[counterOfArraylist];
+            for (int i = 0; i < str.Length; i++)
+            {
+                propertiesAddedCheckBox.Items.Add("public " + Functionality.types[i] + " " + Functionality.props[i] + " { get; set; } " + Functionality.required[i]);
+            }
         }
     }
 }
